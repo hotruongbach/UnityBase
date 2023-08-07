@@ -8,7 +8,6 @@ public class SkinController : MonoBehaviour
     //Data
     public DataSkin data;
     int[] arraySkin;
-    int[] arraySkinDrop;
     int[] arrayVideo;
 
     [SerializeField] SkinnedMeshRenderer model;
@@ -19,13 +18,11 @@ public class SkinController : MonoBehaviour
     void Start()
     {
         arrayVideo = new int[PlayerPrefsManager.ListAmountVideoSkin.Length];
-        arraySkinDrop = new int[PlayerPrefsManager.ListAmountVideoSkin.Length];
-        arraySkin = new int[PlayerPrefsManager.ListAmountVideoSkin.Length];
-        for (int i = 0; i < PlayerPrefsManager.ListAmountVideoSkin.Length; i++)
+        arraySkin = new int[PlayerPrefsManager.ListSkin.Length];
+        for (int i = 0; i < PlayerPrefsManager.ListSkin.Length; i++)
         {
             arrayVideo[i] = PlayerPrefsManager.ListAmountVideoSkin[i];
             arraySkin[i] = PlayerPrefsManager.ListSkin[i];
-            arraySkinDrop[i] = PlayerPrefsManager.SkinDrop[i];
         }
         ChangeSkin(PlayerPrefsManager.SkinUsing);
         ChangeModelSkinShop(PlayerPrefsManager.SkinUsing);
@@ -50,12 +47,6 @@ public class SkinController : MonoBehaviour
     {
         arrayVideo[idSkin] += 1;
         PlayerPrefsManager.ListAmountVideoSkin = arrayVideo;
-    }
-    
-    public void SkinDrop(int idSkin)
-    {
-        arraySkinDrop[idSkin] = 1;
-        PlayerPrefsManager.SkinDrop = arraySkinDrop;
     }
 }
 public class SkinControl : SingletonMonoBehaviour<SkinController>

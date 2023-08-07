@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class NotifyCanvasController : BasePopup
 {
-    [SerializeField] Text text;
+    [SerializeField] TextMeshProUGUI text;
     bool isShow;
     Coroutine coClose;
     public void Initialize(string messenge)

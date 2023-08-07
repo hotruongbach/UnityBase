@@ -12,7 +12,6 @@ public class ContinueCanvas : BasePopup
     [SerializeField] Image imageContinue;
     bool isShow;
 
-    bool isContinue;
     public static int amountRevive;
     // Start is called before the first frame update
     void Start()
@@ -39,15 +38,12 @@ public class ContinueCanvas : BasePopup
     {
         if (isShow == true) return;
         isShow = true;
-        isContinue = false;
         OpenPopup();
         amountRevive++;
     }
     public void Skip()
     {
-
         isShow = false;
-        isContinue = false;
         this.PostEvent(EventID.LoseGame);
         ClosePopup();
         amountRevive = 0;
@@ -57,7 +53,6 @@ public class ContinueCanvas : BasePopup
     public void Continue()
     {
         time = 5;
-        isContinue = true;
         isShow = false;
         mainPanel.transform.DOScale(Vector3.zero, 0.5f);
         imageContinue.gameObject.SetActive(true);
