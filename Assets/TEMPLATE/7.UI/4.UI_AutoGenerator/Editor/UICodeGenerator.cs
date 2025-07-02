@@ -25,7 +25,7 @@ public class UICodeGeneratorWindow : EditorWindow
     #endregion
 
     #region GUI
-    [MenuItem("Tools/Monster/UI Code Generator")]
+    [MenuItem("Tools/Template_Unity/UI Code Generator")]
     public static void ShowWindow()
     {
         var window = GetWindow<UICodeGeneratorWindow>();

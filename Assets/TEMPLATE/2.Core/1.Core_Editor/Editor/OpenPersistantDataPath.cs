@@ -6,12 +6,12 @@ using UnityEngine;
 
 public class OpenPersistantDataPath
 {
-    [MenuItem("Tools/Monster/Open Persistent Data Path", false, 200)]
+    [MenuItem("Tools/Template_Unity/Open Persistent Data Path", false, 200)]
     private static void OpenPersistentDataPath()
     {
         EditorUtility.RevealInFinder(Application.persistentDataPath);
     }
-    [MenuItem("Tools/Monster/Clear Persistent Data Path", false, 200)]
+    [MenuItem("Tools/Template_Unity/Clear Persistent Data Path", false, 200)]
     private static void ClearPersistentDataPath()
     {
         if (EditorUtility.DisplayDialog("Clear Persistent Data Path", "Are you sure you wish to clear the persistent data path?\n This action cannot be reversed.", "Clear", "Cancel"))
