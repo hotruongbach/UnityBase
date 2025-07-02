@@ -1,8 +1,8 @@
 using System;
-using Monster.Audio;
-using Monster.UI;
+using Template.Audio;
+using Template.UI;
 
-namespace Monster
+namespace Template
 {
     public static class GameService
     {

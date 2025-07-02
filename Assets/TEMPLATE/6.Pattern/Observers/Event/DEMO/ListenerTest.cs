@@ -5,7 +5,7 @@ public class ListenerTest : MonoBehaviour
 {
     void Start()
     {
-        MonsterEventManager.TempEvent.AddListener(this, onTempEvent);
+        TemplateEventManager.TempEvent.AddListener(this, onTempEvent);
     }
 
     private void onTempEvent(TempData data)

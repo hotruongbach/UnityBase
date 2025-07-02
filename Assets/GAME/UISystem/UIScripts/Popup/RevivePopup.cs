@@ -2,11 +2,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Monster.User;
+using Template.User;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Monster.UI
+namespace Template.UI
 {
     public class RevivePopup : Window
     {

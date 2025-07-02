@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using Monster;
-using Monster.UI;
+using Template;
+using Template.UI;
 using UnityEngine;
 using UnityEngine.UI;
 

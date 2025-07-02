@@ -1,4 +1,4 @@
-using Monster;
+using Template;
 using UnityEngine;
 using UnityEngine.UI;
 public class ToggleAnimation : MonoBehaviour

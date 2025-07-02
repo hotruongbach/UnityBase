@@ -2,7 +2,7 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine;
 
-namespace Monster.UI
+namespace Template.UI
 {
     public abstract class UIAnimation : MonoBehaviour
     {

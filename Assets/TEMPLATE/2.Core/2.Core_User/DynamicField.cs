@@ -1,6 +1,6 @@
 ﻿using MyBox;
 using UnityEngine;
-namespace Monster.User
+namespace Template.User
 {
     [System.Serializable]
     public class DynamicField

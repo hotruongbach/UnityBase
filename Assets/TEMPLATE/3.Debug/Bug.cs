@@ -1,4 +1,4 @@
-using Monster.Utilities;
+using Template.Utilities;
 using UnityEngine;
 
 public static class Bug

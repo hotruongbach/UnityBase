@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Monster.UI
+namespace Template.UI
 {
     public class PopupOnlineGift : Window
     {

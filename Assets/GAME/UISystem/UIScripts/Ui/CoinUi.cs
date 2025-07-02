@@ -10,11 +10,11 @@ public class CoinUi : MonoBehaviour
     void Start()
     {
         OnChangeCoin();
-        MonsterEventManager.OnChangeCoin.AddListener(this, OnChangeCoin);
+        TemplateEventManager.OnChangeCoin.AddListener(this, OnChangeCoin);
     }
     private void OnDestroy()
     {
-        MonsterEventManager.OnChangeCoin.RemoveListener(this, OnChangeCoin);
+        TemplateEventManager.OnChangeCoin.RemoveListener(this, OnChangeCoin);
     }
     void OnChangeCoin(int param = 0)
     {

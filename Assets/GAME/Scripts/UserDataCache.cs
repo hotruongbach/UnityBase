@@ -14,7 +14,7 @@ public class UserDataCache : MonoBehaviour
         {
             coin = value;
             PlayerPrefsManager.Coin = value;
-            MonsterEventManager.OnChangeCoin.Post(null, coin);
+            TemplateEventManager.OnChangeCoin.Post(null, coin);
         }
     }
     public static int Heart
@@ -24,7 +24,7 @@ public class UserDataCache : MonoBehaviour
         {
             heart = value;
             PlayerPrefsManager.Heart = value;
-            MonsterEventManager.OnChangeHeart.Post(null, heart);
+            TemplateEventManager.OnChangeHeart.Post(null, heart);
         }
     }
 

@@ -1,4 +1,4 @@
-using Monster;
+using Template;
 using UnityEngine;
 using UnityEngine.Playables;
 
@@ -18,6 +18,5 @@ public class Attractor : MonoBehaviour
             director?.Stop();
             director?.Play();
         }
-        //GameService.PlaySound(Monster.Audio.SoundID.Ding);
     }
 }

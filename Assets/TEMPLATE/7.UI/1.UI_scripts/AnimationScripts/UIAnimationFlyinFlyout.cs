@@ -3,7 +3,7 @@ using MyBox;
 using System;
 using UnityEngine;
 
-namespace Monster.UI
+namespace Template.UI
 {
     [RequireComponent(typeof(CanvasGroup))]
     public class UIAnimationFlyinFlyout : UIAnimation

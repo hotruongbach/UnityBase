@@ -8,6 +8,6 @@ public class PosterTest : MonoBehaviour
     [ButtonMethod]
     void PostEvent()
     {
-        MonsterEventManager.TempEvent.Post(this, data);
+        TemplateEventManager.TempEvent.Post(this, data);
     }
 }

@@ -1,11 +1,11 @@
 ﻿using DG.Tweening;
-using Monster;
-using Monster.Utilities;
+using Template;
+using Template.Utilities;
 using MyBox;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
-using Monster.Audio;
+using Template.Audio;
 
 public class AttractItem : MonoBehaviour
 {

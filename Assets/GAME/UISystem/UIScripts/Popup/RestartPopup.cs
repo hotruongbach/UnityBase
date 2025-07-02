@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Monster.UI
+namespace Template.UI
 {
     public class RestartPopup : Window
     {

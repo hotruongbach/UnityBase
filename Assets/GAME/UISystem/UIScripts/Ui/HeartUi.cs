@@ -10,11 +10,11 @@ public class HeartUi : MonoBehaviour
     void Start()
     {
         OnChangeHeart();
-        MonsterEventManager.OnChangeHeart.AddListener(this, OnChangeHeart);
+        TemplateEventManager.OnChangeHeart.AddListener(this, OnChangeHeart);
     }
     private void OnDestroy()
     {
-        MonsterEventManager.OnChangeHeart.RemoveListener(this, OnChangeHeart);
+        TemplateEventManager.OnChangeHeart.RemoveListener(this, OnChangeHeart);
     }
     void OnChangeHeart(int param = 0)
     {

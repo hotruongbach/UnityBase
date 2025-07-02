@@ -1,9 +1,9 @@
 using System;
 using System.Collections;
-using Monster;
-using Monster.UI;
-using Monster.User;
-using Monster.Utilities;
+using Template;
+using Template.UI;
+using Template.User;
+using Template.Utilities;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -122,7 +122,7 @@ public class GameInitializer : MonoBehaviour
     {
         yield return null;
         //GameService.PostEvent(EventID.LoadingProgressChanged, null, percentage);
-        MonsterEventManager.LoadingProgressChange.Post(this, new(percentage, timeLoad));
+        TemplateEventManager.LoadingProgressChange.Post(this, new(percentage, timeLoad));
     }
 
     private bool IsNewDay()

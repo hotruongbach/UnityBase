@@ -1,6 +1,6 @@
-using Monster.FEATURES.DailyGift;
-using Monster.Quests;
-using Monster.Stamina;
+using Template.FEATURES.DailyGift;
+using Template.Quests;
+using Template.Stamina;
 using UnityEditor;
 using UnityEngine;
 
@@ -32,15 +32,15 @@ public static class SOFinder
     #endregion
 
     #region PATH
-    static string DAILY_GIFT_CONFIG_PATH = "Assets/1.MONSTER_TEMPLATE/5.Monster_Features/1.Monster_Feature_DailyGift/GiftSystem/DailyGiftConfig.asset";
-    static string DAILY_QUEST_CONFIG_PATH = "Assets/1.MONSTER_TEMPLATE/5.Monster_Features/2.Monster_Feature_DailyQuests/QuestLibrary.asset";
-    static string SPIN_CONFIG_PATH = "Assets/1.MONSTER_TEMPLATE/5.Monster_Features/5.Monster_Feature_Spin/DataSpin.asset";
-    static string ACHIEVEMENT_CONFIG_PATH = "Assets/1.MONSTER_TEMPLATE/5.Monster_Features/7.Monster_Feature_Achievement/SO/AchievementLibrary.asset";
-    static string ONLINE_GIFT_CONFIG_PATH = "Assets/1.MONSTER_TEMPLATE/5.Monster_Features/3.Monster_Feature_OnlineGift/OnlineGiftLibrary.asset";
-    static string RACE_DATA_PATH = "Assets/1.MONSTER_TEMPLATE/5.Monster_Features/4.Monster_Feature_Race/RaceSystem/RaceData.asset";
-    static string RACE_TIME_CONFIG_PATH = "Assets/1.MONSTER_TEMPLATE/5.Monster_Features/4.Monster_Feature_Race/RaceSystem/RaceTimeConfig.asset";
-    static string STAMINA_CONFIG_PATH = "Assets/1.MONSTER_TEMPLATE/5.Monster_Features/6.Monster_Feature_Stamina/StaminaConfig.asset";
-    static string GAME_CONFIG_PATH = "Assets/1.MONSTER_TEMPLATE/10.Monster_Config/GameConfig.asset";
+    static string DAILY_GIFT_CONFIG_PATH = "Assets/1.TEMPLATE/5.Features/1.Feature_DailyGift/GiftSystem/DailyGiftConfig.asset";
+    static string DAILY_QUEST_CONFIG_PATH = "Assets/1.TEMPLATE/5.Features/2.Feature_DailyQuests/QuestLibrary.asset";
+    static string SPIN_CONFIG_PATH = "Assets/1.TEMPLATE/5.Features/5.Feature_Spin/DataSpin.asset";
+    static string ACHIEVEMENT_CONFIG_PATH = "Assets/1.TEMPLATE/5.Features/7.Feature_Achievement/SO/AchievementLibrary.asset";
+    static string ONLINE_GIFT_CONFIG_PATH = "Assets/1.TEMPLATE/5.Features/3.Feature_OnlineGift/OnlineGiftLibrary.asset";
+    static string RACE_DATA_PATH = "Assets/1.TEMPLATE/5.Features/4.Feature_Race/RaceSystem/RaceData.asset";
+    static string RACE_TIME_CONFIG_PATH = "Assets/1.TEMPLATE/5.Features/4.Feature_Race/RaceSystem/RaceTimeConfig.asset";
+    static string STAMINA_CONFIG_PATH = "Assets/1.TEMPLATE/5.Features/6.Feature_Stamina/StaminaConfig.asset";
+    static string GAME_CONFIG_PATH = "Assets/1.TEMPLATE/10.Config/GameConfig.asset";
 
     #endregion
 

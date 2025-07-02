@@ -1,4 +1,4 @@
-namespace Monster.Audio
+namespace Template.Audio
 {
     public enum SoundID
     {

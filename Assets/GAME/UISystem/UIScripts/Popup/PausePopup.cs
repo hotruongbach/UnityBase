@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace Monster.UI
+namespace Template.UI
 {
     public class PausePopup : Window
     {

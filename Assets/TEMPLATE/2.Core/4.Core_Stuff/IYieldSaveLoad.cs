@@ -1,6 +1,6 @@
 using System.Collections;
 
-namespace Monster
+namespace Template
 {
     public interface IYieldSaveLoad
     {

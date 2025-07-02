@@ -1,4 +1,4 @@
-using Monster.UI;
+using Template.UI;
 using System.IO;
 using Unity.VisualScripting;
 using UnityEditor;
@@ -227,7 +227,7 @@ public class UICodeGeneratorWindow : EditorWindow
     private void AddGeneratedClassToPrefab(string className, GameObject prefabObject)
     {
         // Build the type name with the namespace
-        string typeName = $"Monster.UI.{className}, Assembly-CSharp";
+        string typeName = $"Template.UI.{className}, Assembly-CSharp";
         System.Type generatedClass = System.Type.GetType(typeName);
 
         if (generatedClass != null)
@@ -252,7 +252,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Monster.UI
+namespace Template.UI
 {{
     public class {className} : {nameof(Window)}
     {{

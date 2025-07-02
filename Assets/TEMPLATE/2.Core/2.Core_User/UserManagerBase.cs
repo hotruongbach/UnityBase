@@ -2,7 +2,7 @@ using MyBox;
 using System.Collections;
 using UnityEngine;
 
-namespace Monster.User
+namespace Template.User
 {
     public class UserManagerBase : MonoBehaviour, IYieldSaveLoad
     {

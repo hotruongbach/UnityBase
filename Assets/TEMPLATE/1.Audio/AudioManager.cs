@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Monster.Audio
+namespace Template.Audio
 {
     public class AudioManager : Singleton<AudioManager>
     {

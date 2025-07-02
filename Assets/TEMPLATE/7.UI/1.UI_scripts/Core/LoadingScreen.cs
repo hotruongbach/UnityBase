@@ -1,7 +1,7 @@
 using System;
 using DG.Tweening;
-using Monster;
-using Monster.Utilities;
+using Template;
+using Template.Utilities;
 using MyBox;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -27,7 +27,7 @@ public class LoadingScreen : MonoBehaviour
     private void Start()
     {
         //GameService.AddListener(EventID.LoadingProgressChanged, OnLoadingProgressChanged);
-        MonsterEventManager.LoadingProgressChange.AddListener(this, OnLoadingProgressChanged);
+        TemplateEventManager.LoadingProgressChange.AddListener(this, OnLoadingProgressChanged);
     }
 
     private void OnLoadingProgressChanged(Tuple<float, float> param)
@@ -95,7 +95,7 @@ public class LoadingScreen : MonoBehaviour
             {
                 gameObject.SetActive(false);
                 //GameService.PostEvent(EventID.LoadingCompleted);
-                MonsterEventManager.LoadingCompletedEvent.Post(this, 0);
+                TemplateEventManager.LoadingCompletedEvent.Post(this, 0);
             });
     }
 

@@ -1,6 +1,6 @@
-using Monster;
-using Monster.Stamina;
-using Monster.User;
+using Template;
+using Template.Stamina;
+using Template.User;
 using UnityEngine;
 
 public class Cheat : MonoBehaviour
@@ -17,7 +17,7 @@ public class Cheat : MonoBehaviour
         if (Input.GetKeyDown(win))
         {
             //GameService.PostEvent(EventID.Win);
-            MonsterEventManager.WinEvent.Post(this, 0);
+            TemplateEventManager.WinEvent.Post(this, 0);
             UserManager.LevelUp();
         }
 

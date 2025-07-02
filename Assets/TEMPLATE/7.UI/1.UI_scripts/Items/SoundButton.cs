@@ -1,8 +1,8 @@
-using Monster.Audio;
+using Template.Audio;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Monster.UI
+namespace Template.UI
 {
     public class SoundButton : MonoBehaviour
     {

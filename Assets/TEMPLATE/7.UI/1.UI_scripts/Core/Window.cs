@@ -1,6 +1,6 @@
 using System;
-using Monster;
-using Monster.UI;
+using Template;
+using Template.UI;
 using MyBox;
 using UnityEngine;
 using UnityEngine.Events;
@@ -8,7 +8,7 @@ using UnityEngine.Playables;
 using UnityEngine.Timeline;
 using UnityEngine.UI;
 
-namespace Monster.UI
+namespace Template.UI
 {
     [RequireComponent(typeof(CanvasGroup), typeof(Canvas), typeof(GraphicRaycaster))]
     [RequireComponent(typeof(AdsInvoker))]

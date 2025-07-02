@@ -5,7 +5,7 @@ using MyBox;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Monster.UI
+namespace Template.UI
 {
     public class UIManager : Singleton<UIManager>
     {

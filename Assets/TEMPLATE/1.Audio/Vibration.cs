@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Monster.Audio
+namespace Template.Audio
 {
     public static class Vibration
     {

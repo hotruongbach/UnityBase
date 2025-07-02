@@ -5,7 +5,7 @@ using UnityEngine;
 #if UNITY_EDITOR
 public class DefineManagerWindow : EditorWindow
 {
-    string assetPath = "Assets/1.MONSTER_TEMPLATE/9.PLUGINS/DefineManager/DefineSymbols.asset";
+    string assetPath = "Assets/1.TEMPLATE/9.PLUGINS/DefineManager/DefineSymbols.asset";
     DefineSymbolsSO defineSymbolsSO;
 
     private string newSymbol = "";

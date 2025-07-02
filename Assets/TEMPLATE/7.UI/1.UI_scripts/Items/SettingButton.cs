@@ -1,6 +1,6 @@
-using Monster.UI;
+using Template.UI;
 
-namespace Monster
+namespace Template
 {
     public class SettingButton : ButtonBase
     {

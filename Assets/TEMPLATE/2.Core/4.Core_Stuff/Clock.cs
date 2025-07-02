@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-namespace Monster
+namespace Template
 {
     public class Clock : MonoBehaviour
     {

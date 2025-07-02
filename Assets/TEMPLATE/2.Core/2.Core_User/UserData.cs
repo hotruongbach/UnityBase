@@ -4,7 +4,7 @@ using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-namespace Monster.User
+namespace Template.User
 {
     [System.Serializable]
     public class UserData

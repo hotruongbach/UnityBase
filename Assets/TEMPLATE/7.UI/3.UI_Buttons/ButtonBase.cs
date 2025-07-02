@@ -1,10 +1,10 @@
-using Monster.Audio;
+using Template.Audio;
 using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-namespace Monster.UI
+namespace Template.UI
 {
     [RequireComponent(typeof(Button))]
     [RequireComponent(typeof(Animator))]

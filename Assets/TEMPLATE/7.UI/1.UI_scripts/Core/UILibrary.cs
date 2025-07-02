@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-namespace Monster.UI
+namespace Template.UI
 {
     [CreateAssetMenu(fileName = "UILibrary", menuName = "Game/UILibrary")]
     public class UILibrary : ScriptableObject
