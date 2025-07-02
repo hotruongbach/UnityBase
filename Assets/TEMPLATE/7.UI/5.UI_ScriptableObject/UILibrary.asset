@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29d6bb0766cefa4d9e8f66545bde560, type: 3}
+  m_Name: UILibrary
+  m_EditorClassIdentifier: 
+  ListView:
+  - name: HomeView
+    view: {fileID: 1309470012598800647, guid: 52fcaf765d112bb46933af9e94b92e94, type: 3}
+  ListPopup:
+  - name: PopupSetting
+    view: {fileID: 6211311600970555778, guid: a26988cc9bf68c04190bdc06deb939bd, type: 3}
+  - name: PopupRacePrepare
+    view: {fileID: 5326489554213169181, guid: ec33506ed16bb71468cbcc604e71f6d4, type: 3}
+  - name: PopupRaceProcessing
+    view: {fileID: 1968082786213323502, guid: bbf8a7e6085ac5b48b4037dfd44365d8, type: 3}
+  - name: PopupRaceEnded
+    view: {fileID: 8988228408393581378, guid: 61033bd0cec09c245a5829c66e365ab9, type: 3}
+  - name: PopupDailyGift
+    view: {fileID: 4728569249414904927, guid: 4d61a1920b2ca494d94fb7366b35eee4, type: 3}
+  - name: BuyBoosterPopup
+    view: {fileID: 6334173721719591669, guid: 85209e90ac7f6624d834e004029c3b17, type: 3}
+  - name: NoadsPopup
+    view: {fileID: 9085973049432302126, guid: 9435586abaf11e547864b16533878644, type: 3}
+  - name: NoInternetPopup
+    view: {fileID: 3652735053386771543, guid: 6c1beaeef868c774ba50cd907e20470f, type: 3}
+  - name: NotEnoughResourcePopup
+    view: {fileID: 3948480076259178566, guid: f11f8204d7ca48f48966bc9837721c15, type: 3}
+  - name: PausePopup
+    view: {fileID: 1031531285819136696, guid: 1345698e9f2ad3a49a2f1f17e024899f, type: 3}
+  - name: RatePopup
+    view: {fileID: 3056508577458588146, guid: dd2aaedb369928a4fb3c6dffac91b2d5, type: 3}
+  - name: RestartPopup
+    view: {fileID: 6528003119588688000, guid: 68b7a0ffa17a6434eb4ff80105bc1430, type: 3}
+  - name: RevivePopup
+    view: {fileID: 1288943756805184847, guid: a0c4bff64e19d1b418ed57e41e739011, type: 3}
+  - name: ShopPopup
+    view: {fileID: 241472651315595951, guid: 0d4452934b8231742a443bc3e9aca7ba, type: 3}

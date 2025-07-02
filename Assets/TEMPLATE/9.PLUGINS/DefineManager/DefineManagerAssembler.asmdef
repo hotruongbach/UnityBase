@@ -1,0 +1,16 @@
+{
+    "name": "DefineManagerAssembler",
+    "rootNamespace": "",
+    "references": [
+        "GUID:5296bc01fe4056641a8d8c5c221fa71c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

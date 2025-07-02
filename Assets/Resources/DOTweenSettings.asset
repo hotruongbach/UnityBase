@@ -32,12 +32,12 @@ MonoBehaviour:
   defaultAutoKill: 1
   defaultLoopType: 0
   debugMode: 0
-  debugStoreTargetId: 0
+  debugStoreTargetId: 1
   showPreviewPanel: 1
   storeSettingsLocation: 0
   modules:
     showPanel: 0
-    audioEnabled: 0
+    audioEnabled: 1
     physicsEnabled: 1
     physics2DEnabled: 1
     spriteEnabled: 1

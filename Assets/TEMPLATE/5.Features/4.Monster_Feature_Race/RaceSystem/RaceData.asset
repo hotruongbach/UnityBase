@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f84e39413e53d644adf31bdd4f4e1c2, type: 3}
+  m_Name: RaceData
+  m_EditorClassIdentifier: 
+  State: 0
+  Time:
+    EventActivatedDateTime: 10/4/2024 9:11:32 AM
+    EventPrepareTimeRemaining: 0
+    EventJoinedDateTime: 10/4/2024 9:11:32 AM
+    EventRuntimeRemaining: 0
+    EventCompleteDateTime: 10/4/2024 9:11:32 AM
+    EventClaimTimeRemaining: 0
+    EventEndedDateTime: 10/4/2024 9:11:42 AM
+    EventReactiveTimeRemaning: 17965
+  TimeConfig: {fileID: 11400000, guid: 25a0c36dfb578db44bdeb87999e780d8, type: 2}
+  StartStage: 0
+  EndStage: 0
+  player:
+    Name: 
+    IsPlayer: 0
+    CurrentStage: 0
+    BotDifficultLevel: 0
+    TargetStage: 0
+    Icon: 0
+    Frame: 0
+  bot1:
+    Name: 
+    IsPlayer: 0
+    CurrentStage: 0
+    BotDifficultLevel: 0
+    TargetStage: 0
+    Icon: 0
+    Frame: 0
+  bot2:
+    Name: 
+    IsPlayer: 0
+    CurrentStage: 0
+    BotDifficultLevel: 0
+    TargetStage: 0
+    Icon: 0
+    Frame: 0
+  bot3:
+    Name: 
+    IsPlayer: 0
+    CurrentStage: 0
+    BotDifficultLevel: 0
+    TargetStage: 0
+    Icon: 0
+    Frame: 0
+  bot4:
+    Name: 
+    IsPlayer: 0
+    CurrentStage: 0
+    BotDifficultLevel: 0
+    TargetStage: 0
+    Icon: 0
+    Frame: 0
+  WinStreak: 0
+  ListCompletedCompetitor: []

@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f7691975cb177469ae68f2f3b58821, type: 3}
+  m_Name: DailyGiftConfig
+  m_EditorClassIdentifier: 
+  Weeks:
+  - name: Week 0
+    dailyGifts:
+    - name: Day 1 Coinx100
+      index: 1
+      GiftData:
+      - ResourceType: 1
+        ResourceValue: 100
+    - name: Day 2 Ticketx10
+      index: 2
+      GiftData:
+      - ResourceType: 2
+        ResourceValue: 10
+    - name: Day 3 Diamondx1
+      index: 3
+      GiftData:
+      - ResourceType: 3
+        ResourceValue: 1
+    - name: Day 4 Coinx200
+      index: 4
+      GiftData:
+      - ResourceType: 1
+        ResourceValue: 200
+    - name: Day 5 Coinx250
+      index: 5
+      GiftData:
+      - ResourceType: 1
+        ResourceValue: 250
+    - name: Day 6 Ticketx20
+      index: 6
+      GiftData:
+      - ResourceType: 2
+        ResourceValue: 20
+    - name: Day 7 Diamondx10
+      index: 7
+      GiftData:
+      - ResourceType: 3
+        ResourceValue: 10
+  - name: Week 1
+    dailyGifts:
+    - name: Day 1 Diamondx10
+      index: 1
+      GiftData:
+      - ResourceType: 3
+        ResourceValue: 10
+    - name: Day 2 Diamondx1
+      index: 2
+      GiftData:
+      - ResourceType: 3
+        ResourceValue: 1
+    - name: Day 3 Diamondx1
+      index: 3
+      GiftData:
+      - ResourceType: 3
+        ResourceValue: 1
+    - name: Day 4 Diamondx1
+      index: 4
+      GiftData:
+      - ResourceType: 3
+        ResourceValue: 1
+    - name: Day 5 Diamondx1
+      index: 5
+      GiftData:
+      - ResourceType: 3
+        ResourceValue: 1
+    - name: Day 6 Diamondx1
+      index: 6
+      GiftData:
+      - ResourceType: 3
+        ResourceValue: 1
+    - name: Day 7 Diamondx1
+      index: 7
+      GiftData:
+      - ResourceType: 3
+        ResourceValue: 1
+  - name: Week 2
+    dailyGifts:
+    - name: Day 1 Diamondx10
+      index: 1
+      GiftData:
+      - ResourceType: 3
+        ResourceValue: 10
+    - name: Day 2 Diamondx1
+      index: 2
+      GiftData:
+      - ResourceType: 3
+        ResourceValue: 1
+    - name: Day 3 Diamondx1
+      index: 3
+      GiftData:
+      - ResourceType: 3
+        ResourceValue: 1
+    - name: Day 4 Diamondx1
+      index: 4
+      GiftData:
+      - ResourceType: 3
+        ResourceValue: 1
+    - name: Day 5 Diamondx1
+      index: 5
+      GiftData:
+      - ResourceType: 3
+        ResourceValue: 1
+    - name: Day 6 Diamondx1
+      index: 6
+      GiftData:
+      - ResourceType: 3
+        ResourceValue: 1
+    - name: Day 7 Diamondx1
+      index: 7
+      GiftData:
+      - ResourceType: 3
+        ResourceValue: 1
