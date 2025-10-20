@@ -21,25 +21,6 @@ public class Cheat : MonoBehaviour
             UserManager.LevelUp();
         }
 
-        if (Input.GetKeyDown(race))
-        {
-            switch (RaceManager.EventState)
-            {
-                case EventState.Deactivated:
-                    RaceManager.EventActivate();
-                    break;
-                case EventState.Preparing:
-                    RaceManager.EventJoin();
-                    break;
-                case EventState.Processing:
-                    RaceManager.EventComplete();
-                    break;
-                case EventState.Completed:
-                    RaceManager.ClaimReward();
-                    break;
-            }
-        }
-
         if (Input.GetKeyDown(SpendStamina))
         {
             StaminaManager.SpendStamina(1);

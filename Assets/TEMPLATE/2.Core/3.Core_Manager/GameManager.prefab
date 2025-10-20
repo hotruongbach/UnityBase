@@ -11,10 +11,7 @@ GameObject:
   - component: {fileID: 5348649636446396150}
   - component: {fileID: 5341073413272415165}
   - component: {fileID: 434446321992501240}
-  - component: {fileID: 8653213167400321147}
   - component: {fileID: 5561605486592912803}
-  - component: {fileID: 8825571306949889972}
-  - component: {fileID: 4170533760516231729}
   m_Layer: 0
   m_Name: Features
   m_TagString: Untagged
@@ -74,26 +71,6 @@ MonoBehaviour:
     TimeUntilNextRecover: 0
     UnlimitStartTime: 
     UnlimitTimeRemaining: 0
---- !u!114 &8653213167400321147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 182421848737467859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb9cefcc99e683342ba74d7a1e25bf33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EventName: Race
-  TimeConfig: {fileID: 11400000, guid: 25a0c36dfb578db44bdeb87999e780d8, type: 2}
-  EventData: {fileID: 11400000, guid: b42d2f726ff43374099e2e35a59e2b91, type: 2}
-  customConfig:
-    RaceLength: 12
-    FirstReward: []
-    SecondReward: []
-    ThirdReward: []
 --- !u!114 &5561605486592912803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,36 +93,6 @@ MonoBehaviour:
     index: 0
     GiftData: []
   IsClaimable: 0
---- !u!114 &8825571306949889972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 182421848737467859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a5ba21169728b947807e445f8e38558, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  library: {fileID: 11400000, guid: 9b73b8f059e729b4089273508bf1c8a9, type: 2}
-  achievementData: []
---- !u!114 &4170533760516231729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 182421848737467859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db42faf07d7365f45b42830697683730, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  library: {fileID: 11400000, guid: 9384f3cc7051177498196d4d9478a813, type: 2}
-  LastClaimFreeGiftTime: 
-  CurrentVideoStage: 0
-  FreeTimeResetRemaining: 0
 --- !u!1 &1759461598623119426
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,16 +601,16 @@ MonoBehaviour:
     Feature: {fileID: 434446321992501240}
     IsActivate: 1
   - Name: Race
-    Feature: {fileID: 8653213167400321147}
+    Feature: {fileID: 0}
     IsActivate: 1
   - Name: DailyGift
     Feature: {fileID: 5561605486592912803}
     IsActivate: 1
   - Name: Achievement
-    Feature: {fileID: 8825571306949889972}
+    Feature: {fileID: 0}
     IsActivate: 1
   - Name: OnlineGift
-    Feature: {fileID: 4170533760516231729}
+    Feature: {fileID: 0}
     IsActivate: 1
 --- !u!114 &5927428975971268765
 MonoBehaviour:

@@ -63,18 +63,6 @@ public static class SOFinder
         Select<DataSpin>(SPIN_CONFIG_PATH);
     }
 
-    [MenuItem("Tools/SOFinder/AchievementLibrary")]
-    public static void FindAchievement()
-    {
-        Select<AchievementLibrary>(ACHIEVEMENT_CONFIG_PATH);
-    }
-
-    [MenuItem("Tools/SOFinder/OnlineGift/Config")]
-    public static void FindOnlineGift()
-    {
-        Select<OnlineGiftLibrary>(ONLINE_GIFT_CONFIG_PATH);
-    }
-
     [MenuItem("Tools/SOFinder/Race/RaceDataSO")]
     public static void FindRaceData()
     {
