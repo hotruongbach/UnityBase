@@ -189,6 +189,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -283,9 +284,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4978633710278320039}
-  - component: {fileID: 474912884479625039}
+  - component: {fileID: 8052342028965618023}
   m_Layer: 0
-  m_Name: EventDispatcher
+  m_Name: EventManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -306,7 +307,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3175545847587484778}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &474912884479625039
+--- !u!114 &8052342028965618023
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -315,7 +316,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4652040123410278855}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82f4045d01e360448bf445e9a41a74d0, type: 3}
+  m_Script: {fileID: 11500000, guid: a160f1d9940ef5a429dd6318cc3060dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   loadingProgressChange:
@@ -334,6 +335,12 @@ MonoBehaviour:
     Listeners: []
     History: []
   tempEvent:
+    Listeners: []
+    History: []
+  onChangeCoin:
+    Listeners: []
+    History: []
+  onChangeHeart:
     Listeners: []
     History: []
 --- !u!1 &4749677544795372835
@@ -397,7 +404,6 @@ GameObject:
   - component: {fileID: 3175545847587484778}
   - component: {fileID: 4596156210764060328}
   - component: {fileID: 7920389394852848605}
-  - component: {fileID: 8578982952072488753}
   - component: {fileID: 5705711342290682062}
   m_Layer: 0
   m_Name: GameManager
@@ -439,6 +445,7 @@ MonoBehaviour:
   Clock: {fileID: 7920389394852848605}
   userManager: {fileID: 5927428975971268765}
   featureManager: {fileID: 2604675232581187399}
+  openAdsContainer: {fileID: 0}
 --- !u!114 &7920389394852848605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -449,18 +456,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af658c7b16ac1024485a376c108c18b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8578982952072488753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6748892760109128546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2664a94a0c8194c4b96e8f21bf996ad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &5705711342290682062
@@ -518,6 +513,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
