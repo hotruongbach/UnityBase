@@ -1,7 +1,9 @@
-using MyBox;
+﻿using MyBox;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 namespace Template.Audio
 {
@@ -26,6 +28,20 @@ namespace Template.Audio
         readonly Dictionary<SoundID, AudioClip> m_Clips = new();
         const string k_AudioSettings = "AudioSettings";
         AudioSettings m_AudioSettings = new();
+
+        [Header("Clips")]
+        public AudioClip[] footstepClips; // Array cho random footsteps
+        public AudioClip[] interactionClips; // Array cho interactions
+
+        [Header("Mixer Groups")] // Từ Audio Mixer
+        public AudioMixerGroup musicGroup;
+        public AudioMixerGroup sfxGroup;
+
+        [Header("Ducking Settings")]
+        public float duckVolume = 0.2f; // Volume music giảm xuống
+        public float fadeTime = 0.5f;   // Thời gian fade
+
+        private float originalMusicVolume;
         public bool EnableMusic
         {
             get => m_AudioSettings.EnableMusic;
@@ -129,7 +145,41 @@ namespace Template.Audio
                 m_LastSoundPlayTime = Time.time;
             }
         }
+        // Chơi SFX với randomization (clip + pitch)
+        void _PlaySound(SoundID soundID, float minPitch = 0.9f, float maxPitch = 1.1f)
+        {
+            m_EffectSource.clip = m_Clips[soundID];
+            m_EffectSource.pitch = UnityEngine.Random.Range(minPitch, maxPitch);
+            m_EffectSource.PlayOneShot(m_EffectSource.clip); // Tốt cho mobile, giảm latency
+        }
 
+        // Ducking: Fade music khi chơi SFX quan trọng
+        public void DuckMusicForSFX()
+        {
+            StartCoroutine(DuckCoroutine());
+        }
+
+        private IEnumerator DuckCoroutine()
+        {
+            float t = 0f;
+            while (t < fadeTime)
+            {
+                t += Time.deltaTime;
+                m_MusicSource.volume = Mathf.Lerp(originalMusicVolume, duckVolume, t / fadeTime);
+                yield return null;
+            }
+
+            // Chờ SFX xong (hoặc set thời gian thủ công)
+            while (m_EffectSource.isPlaying) yield return null;
+
+            t = 0f;
+            while (t < fadeTime)
+            {
+                t += Time.deltaTime;
+                m_MusicSource.volume = Mathf.Lerp(duckVolume, originalMusicVolume, t / fadeTime);
+                yield return null;
+            }
+        }
         /// <summary>
         /// Play a sound effect based on its sound ID
         /// </summary>
@@ -137,6 +187,10 @@ namespace Template.Audio
         public static void PlaySound(SoundID soundID)
         {
             Instance._PlaySound(soundID);
+        }
+        public static void PlaySound(SoundID soundID, float minPitch = 0.9f, float maxPitch = 1.1f)
+        {
+            Instance._PlaySound(soundID, maxPitch, maxPitch);
         }
         public static void PlayVibrate()
         {

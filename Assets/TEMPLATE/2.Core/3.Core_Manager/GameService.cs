@@ -7,26 +7,6 @@ namespace Template
     public static class GameService
     {
         #region AUDIO AND VIBRATION
-        public static void PlayVibrate()
-        {
-            AudioManager.PlayVibrate();
-        }
-
-        public static void PlaySound(SoundID soundID)
-        {
-            AudioManager.PlaySound(soundID);
-        }
-
-        public static void PlayMusic(SoundID soundID, bool isLoop = true)
-        {
-            AudioManager.PlayMusic(soundID, isLoop);
-        }
-
-        public static void StopMusic()
-        {
-            AudioManager.StopMusic();
-        }
-
         public static bool EnableMusic
         {
             get => AudioManager.Instance.EnableMusic;

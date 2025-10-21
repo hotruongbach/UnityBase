@@ -20,10 +20,10 @@ namespace Template.UI
 
         private void PlaySound()
         {
-            GameService.PlaySound(soundID);
+            AudioManager.PlaySound(soundID);
             if (hasVibrate)
             {
-                GameService.PlayVibrate();
+                AudioManager.PlayVibrate();
             }
         }
         private void OnDisable()

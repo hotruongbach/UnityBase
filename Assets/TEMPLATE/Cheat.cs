@@ -6,9 +6,6 @@ using UnityEngine;
 public class Cheat : MonoBehaviour
 {
     [SerializeField] KeyCode win = KeyCode.W;
-
-    [SerializeField] KeyCode race = KeyCode.R;
-
     [SerializeField] KeyCode SpendStamina = KeyCode.S;
     [SerializeField] KeyCode UnlimitStamina = KeyCode.D;
     // Update is called once per frame

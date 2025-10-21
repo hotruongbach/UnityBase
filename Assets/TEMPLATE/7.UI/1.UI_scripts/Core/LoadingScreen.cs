@@ -19,9 +19,6 @@ public class LoadingScreen : MonoBehaviour
     private float delayBeforeHiding = 1;
 
     [SerializeField]
-    private float crossFadeDuration = -0.5f;
-
-    [SerializeField]
     private float defaultLoadingStep = 0.2f;
 
     private void Start()

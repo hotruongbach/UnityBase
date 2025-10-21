@@ -44,7 +44,7 @@ namespace Template.UI
         }
         protected virtual void PlaySound()
         {
-            GameService.PlaySound(soundID);
+            AudioManager.PlaySound(soundID);
         }
 
         public void SetInteract(bool isInteract)

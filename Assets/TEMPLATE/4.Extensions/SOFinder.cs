@@ -35,8 +35,6 @@ public static class SOFinder
     static string DAILY_GIFT_CONFIG_PATH = "Assets/1.TEMPLATE/5.Features/1.Feature_DailyGift/GiftSystem/DailyGiftConfig.asset";
     static string DAILY_QUEST_CONFIG_PATH = "Assets/1.TEMPLATE/5.Features/2.Feature_DailyQuests/QuestLibrary.asset";
     static string SPIN_CONFIG_PATH = "Assets/1.TEMPLATE/5.Features/5.Feature_Spin/DataSpin.asset";
-    static string ACHIEVEMENT_CONFIG_PATH = "Assets/1.TEMPLATE/5.Features/7.Feature_Achievement/SO/AchievementLibrary.asset";
-    static string ONLINE_GIFT_CONFIG_PATH = "Assets/1.TEMPLATE/5.Features/3.Feature_OnlineGift/OnlineGiftLibrary.asset";
     static string RACE_DATA_PATH = "Assets/1.TEMPLATE/5.Features/4.Feature_Race/RaceSystem/RaceData.asset";
     static string RACE_TIME_CONFIG_PATH = "Assets/1.TEMPLATE/5.Features/4.Feature_Race/RaceSystem/RaceTimeConfig.asset";
     static string STAMINA_CONFIG_PATH = "Assets/1.TEMPLATE/5.Features/6.Feature_Stamina/StaminaConfig.asset";

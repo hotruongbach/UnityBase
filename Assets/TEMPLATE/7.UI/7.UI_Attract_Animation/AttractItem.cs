@@ -29,7 +29,7 @@ public class AttractItem : MonoBehaviour
         rect.localScale = Vector3.zero;
         rect.anchoredPosition = Vector2.zero;
 
-        GameService.PlaySound(soundIDAppear);
+        AudioManager.PlaySound(soundIDAppear);
 
         Tween scaleUpTween = rect.DOScale(Vector3.one, AppearDuration).SetEase(AppearEase);
         Tween buzzOutTween = rect.DOAnchorPos(randomPosition, AppearDuration).SetEase(AppearEase);
@@ -44,7 +44,7 @@ public class AttractItem : MonoBehaviour
 
         seq.OnComplete(() =>
         {
-            GameService.PlaySound(soundIDCollected);
+            AudioManager.PlaySound(soundIDCollected);
             ReturnPool();
             OnReachTarget?.Invoke();
         });
