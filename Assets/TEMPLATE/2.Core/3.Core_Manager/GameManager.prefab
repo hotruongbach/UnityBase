@@ -340,6 +340,12 @@ MonoBehaviour:
   m_EffectSource: {fileID: 2910017214842885467}
   m_MinSoundInterval: 0.1
   m_Sounds: []
+  footstepClips: []
+  interactionClips: []
+  musicGroup: {fileID: 9051594604074396201, guid: 52c6e33bf11e91e4bbd1dcc733c76ed1, type: 2}
+  sfxGroup: {fileID: -2580965050671025139, guid: 52c6e33bf11e91e4bbd1dcc733c76ed1, type: 2}
+  duckVolume: 0.2
+  fadeTime: 0.5
 --- !u!1 &6748892760109128546
 GameObject:
   m_ObjectHideFlags: 0

@@ -29,10 +29,6 @@ namespace Template.Audio
         const string k_AudioSettings = "AudioSettings";
         AudioSettings m_AudioSettings = new();
 
-        [Header("Clips")]
-        public AudioClip[] footstepClips; // Array cho random footsteps
-        public AudioClip[] interactionClips; // Array cho interactions
-
         [Header("Mixer Groups")] // Từ Audio Mixer
         public AudioMixerGroup musicGroup;
         public AudioMixerGroup sfxGroup;
